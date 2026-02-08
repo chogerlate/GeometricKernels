@@ -1,8 +1,7 @@
 import lab as B
 import torch
-from beartype.typing import Any, List, Optional
+from beartype.typing import Any, List, Optional, Union
 from lab import dispatch
-from plum import Union
 
 _Numeric = Union[B.Number, B.TorchNumeric]
 

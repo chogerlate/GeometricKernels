@@ -1,8 +1,8 @@
 import jax.numpy as jnp
 import lab as B
-from beartype.typing import List
+from beartype.typing import List, Union
 from lab import dispatch
-from plum import Union, convert
+from plum import convert
 
 _Numeric = Union[B.Number, B.JAXNumeric]
 

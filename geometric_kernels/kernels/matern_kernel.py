@@ -7,7 +7,8 @@ It wraps around different kernels and feature maps, dispatching on the space.
 Unless you know exactly what you are doing, use :class:`MaternGeometricKernel`.
 """
 
-from plum import dispatch, overload
+from beartype.typing import overload
+from plum import dispatch
 
 from geometric_kernels.feature_maps import (
     DeterministicFeatureMapCompact,

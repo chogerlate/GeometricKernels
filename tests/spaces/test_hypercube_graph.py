@@ -1,7 +1,7 @@
 import lab as B
 import numpy as np
 import pytest
-from plum import Tuple
+from beartype.typing import Tuple
 
 from geometric_kernels.kernels import MaternGeometricKernel
 from geometric_kernels.spaces import HypercubeGraph

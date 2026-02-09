@@ -33,6 +33,15 @@ library.
 
 import logging
 
+# Monkey-patch plum.Union for compatibility with dependencies (e.g., spherical-harmonics-basis)
+# that use the old plum interface with plum-dispatch >= 2.6.0.
+import plum
+
+if not hasattr(plum, "Union"):
+    from beartype.typing import Union
+
+    plum.Union = Union
+
 import geometric_kernels._logging  # noqa: F401
 
 logging.getLogger(__name__).info(

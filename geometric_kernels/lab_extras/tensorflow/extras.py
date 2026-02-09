@@ -3,9 +3,8 @@ import sys
 import lab as B
 import tensorflow as tf
 import tensorflow_probability as tfp
-from beartype.typing import Any, List, Optional
+from beartype.typing import Any, List, Optional, Union
 from lab import dispatch
-from plum import Union
 
 _Numeric = Union[B.Number, B.TFNumeric, B.NPNumeric]
 

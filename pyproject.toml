@@ -23,12 +23,12 @@ keywords=[
 ]
 requires-python = ">=3.9"
 dependencies = [
-    "backends", # >=1.7",
+    "backends>=1.8.0",
     "einops",
     "geomstats",
-    "numpy>=2.0",
+    "numpy>=1.22",
     "opt-einsum",
-    "plum-dispatch",
+    "plum-dispatch>=2.6.0",
     "potpourri3d",
     "robust_laplacian",
     "scipy>=1.3",

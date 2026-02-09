@@ -1,8 +1,10 @@
 import lab as B
 import numpy as np
+from types import ModuleType
+
 from beartype.door import die_if_unbearable, is_bearable
 from beartype.typing import Any, Callable, List, Optional, Union
-from plum import ModuleType, resolve_type_hint
+from plum import resolve_type_hint
 
 from geometric_kernels.lab_extras import SparseArray
 from geometric_kernels.spaces import (
